@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/CountrySection">
+        <TextView
+            android:text="Request Number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:id="@+id/requestLabel" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/requestText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/getSection"
+        android:minWidth="25px"
+        android:minHeight="20px">
+        <Button
+            android:id="@+id/getGeoButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Get Info" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/ConSection">
+        <TextView
+            android:text="ModelYear"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/ModelYearLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:id="@+id/resultModelYearText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/StateSection">
+        <TextView
+            android:text="Part Number:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/partLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultpartText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/productSection">
+        <TextView
+            android:text="Product Code:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultproductLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultproductCodeText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/VehProgSection">
+        <TextView
+            android:text="Vehicle Program:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvehProgLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvehProgText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/VehArchitSection">
+        <TextView
+            android:text="Vehicle Architec:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvehArchLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvehArchitText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/VehMakeSection">
+        <TextView
+            android:text="Vehicle Make:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvehmakeLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvehmakeText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/upcSection">
+        <TextView
+            android:text="UPC:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultupcLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultupcText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/vppsLevel1Section">
+        <TextView
+            android:text="vpps Level1:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvppsLevel1Label" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultvppsLevel1Text" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/functionalAreaSection">
+        <TextView
+            android:text="Funct Area:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultfunctionalAreaLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultfunctionalAreaText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/createdByGminSection">
+        <TextView
+            android:text="CreatedBy:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultcreatedByGminLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultcreatedByGminText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/createdDateSection">
+        <TextView
+            android:text="Created Date:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultcreatedDateLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultcreatedDateText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="27.5dp"
+        android:id="@+id/updatedDateSection">
+        <TextView
+            android:text="Updated Date:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultupdatedDateLabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/resultupdatedDateText" />
+    </LinearLayout>
+    <Button
+        android:text="Add New"
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0.0dp"
+        android:gravity="center"
+        android:layout_marginLeft="140dp" />
+</LinearLayout>

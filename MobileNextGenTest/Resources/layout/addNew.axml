@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="14"
+    android:columnCount="4"
+    android:orientation="vertical"
+    android:useDefaultMargins="false"
+    android:paddingLeft="20dp">
+    <TextView
+        android:text="Req. number: "
+        android:textSize="14dip"
+        android:layout_row="0"
+        android:layout_column="0" />
+    <TextView
+        android:text="Model Year: "
+        android:textSize="14dip"
+        android:layout_row="0"
+        android:layout_column="2" />
+    <TextView
+        android:text="Part Number : "
+        android:textSize="14dip"
+        android:layout_row="1"
+        android:layout_column="0" />
+    <TextView
+        android:text="Product Code : "
+        android:textSize="14dip"
+        android:layout_row="1"
+        android:layout_column="2" />
+    <TextView
+        android:text="Veh. Program : "
+        android:textSize="14dip"
+        android:layout_row="3"
+        android:layout_column="0" />
+    <TextView
+        android:text="Veh. Archit : "
+        android:textSize="14dip"
+        android:layout_row="3"
+        android:layout_column="2" />
+    <TextView
+        android:text="Veh. Make : "
+        android:textSize="14dip"
+        android:layout_row="4"
+        android:layout_column="0" />
+    <TextView
+        android:text="upc : "
+        android:textSize="14dip"
+        android:layout_row="5"
+        android:layout_column="0" />
+    <TextView
+        android:text="vpps Level1 : "
+        android:textSize="14dip"
+        android:layout_row="6"
+        android:layout_column="0" />
+    <TextView
+        android:text="Functional Area : "
+        android:textSize="14dip"
+        android:layout_row="7"
+        android:layout_column="0" />
+    <TextView
+        android:text="Gmin : "
+        android:textSize="14dip"
+        android:layout_row="8"
+        android:layout_column="0" />
+    <TextView
+        android:text="created Date : "
+        android:textSize="14dip"
+        android:layout_row="9"
+        android:layout_column="0" />
+    <TextView
+        android:text="Updated Date : "
+        android:textSize="14dip"
+        android:layout_row="10"
+        android:layout_column="0" />
+    <EditText
+        android:id="@+id/AddTxtReqNum"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_marginRight="1.0dp"
+        android:width="@android:dimen/notification_large_icon_height" />
+    <EditText
+        android:id="@+id/AddTxtModelYear"
+        android:layout_column="3"
+        android:layout_row="0"
+        android:layout_marginRight="1.0dp"
+        android:width="@android:dimen/notification_large_icon_height" />
+    <EditText
+        android:id="@+id/AddTxtPartNum"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtProductCode"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtvehProgram"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtvehArchitecture"
+        android:layout_column="3"
+        android:layout_row="3"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtvehMake"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtupc"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtvppsLevel1"
+        android:layout_column="1"
+        android:layout_row="6"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtfunctionalArea"
+        android:layout_column="1"
+        android:layout_row="7"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtcreatedByGmin"
+        android:layout_column="1"
+        android:layout_row="8"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtcreatedDate"
+        android:layout_column="1"
+        android:layout_row="9"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <EditText
+        android:id="@+id/AddTxtupdatedDate"
+        android:layout_column="1"
+        android:layout_row="10"
+        android:width="@android:dimen/notification_large_icon_width" />
+    <Button
+        android:id="@+id/myButton"
+        android:text="@string/Hello"
+        android:layout_row="12"
+        android:layout_column="1"
+        android:layout_columnSpan="1" />
+</GridLayout>
