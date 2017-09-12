@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Click Me!</string>
+    <string name="Hello">Submit</string>
     <string name="ApplicationName">Android first application</string>
   <string name="TextLabel">new text label</string>
 </resources>
